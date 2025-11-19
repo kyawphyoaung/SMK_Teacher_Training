@@ -1,0 +1,7 @@
+,PURPOSE OF THE TEST,TEST DATA (Order / Member),EXPECTED RESULT,ACTUAL RESULT,PASS/FAIL,ACTION NEEDED
+1,Normal order (No discount Non -Member),10000/ No,Total: 12000 (10000 + 2000 ),Total: 12000 (10000 + 2000 ),Pass,
+2,Member Free Delivery check,10000 / Yes,Total: 10000 (Free delivery)\,Total: 10000 (Free delivery)\,Pass,
+3,Discount applied (Within limit),25000 / No,Total: 24500 (25000 - 2500 disc + 2000 fee)\,Total: 24500 (25000 - 2500 disc + 2000 fee)\,Pass,
+4,Discount applied (Exceeds Cap),50000 / Yes,Total: 47000 (50000 - 3000 capped disc)\,Total: 47000 (50000 - 3000 capped disc)\,Pass,
+5,Boundary Check (Exact threshold),20000 / No,Total: 20000 (20000 - 2000 disc + 2000 fee)\,Total: 20000 (20000 - 2000 disc + 2000 fee)\,Pass,
+6,Invalid Data Check,(-500)/Yes,{Error Message},{Error Message},Pass,
